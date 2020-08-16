@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+#TODO: figure out why I need this here and in bootstrap.yml
+spring:
+  application:
+    name: ConsumerApplication
+
+
+kafka.bootstrapServers: 172.17.0.1:9092
+kafka.topic: alfresco-node-events
+kafka.groupId: group1
