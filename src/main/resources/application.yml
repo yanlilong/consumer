@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8000
 
 #TODO: figure out why I need this here and in bootstrap.yml
 spring:
@@ -8,5 +8,5 @@ spring:
 
 
 kafka.bootstrapServers: 172.17.0.1:9092
-kafka.topic: alfresco-node-events
+kafka.topic: alfresco-nodes-event
 kafka.groupId: group1
