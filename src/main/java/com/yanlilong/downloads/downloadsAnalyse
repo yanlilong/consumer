@@ -1,0 +1,52 @@
+download funktions support
+1.Request: inputs more than one files, that will be downloaded.
+2.Response: creates a zip file node, the zip file node saves downloaded files.
+download state: observes download states
+Which states can be observed?
+ filesAdded
+ bytesAdded
+ totalBytes
+ id
+ tatalFiles
+ status： pending（）, in_progress,down,max_content_size_exceeded（download maximal size）,cancelled
+
+ "entry": {
+    "filesAdded": 0,
+    "bytesAdded": 0,
+    "totalBytes": 0,
+    "id": "3ea71d75-e2fa-4f23-9239-438c9b048574",
+    "totalFiles": 0,
+    "status": "PENDING"
+  }
+
+endpoint:
+2.get download
+
+response
+ "entry": {
+    "filesAdded": 0,
+    "bytesAdded": 0,
+    "totalBytes": 0,
+    "id": "3ea71d75-e2fa-4f23-9239-438c9b048574",
+    "totalFiles": 0,
+    "status": "PENDING"
+  }
+
+
+
+  contoller post download node->get node->node1,node2->read node1 and node2-get node1 and properties? get node2 properties from restservice->public Downloads method newDownload (List<String>DownloadsnodesList)
+  DownloadsService
+  method DownloadStatus createDownloadsZip (List<String>DownloadsnodesList)
+  Method DownloadStatus getDownloadsZip(Sting downloadNodeId)
+  Method void deleteDownloadsZip(String downloadNodeId)
+
+  through nodeId to get
+ get downloadEvent content content
+ file id to get
+zip file
+from nodeid get content and get file.
+create zip file of all files.
+(https://www.baeldung.com/java-compress-and-uncompress)
+create a node for zip file
+
+
