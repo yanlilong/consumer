@@ -26,15 +26,17 @@ public class DownloadsService {
     DownloadsStatus downloadStatus = null;
     return downloadStatus;
   }
-public Download createDownloads(List<DownloadNodes> downloadNodesList){
+
+  public Download createDownloads(List<DownloadNodes> downloadNodesList) {
     //downloadNodesList.stream().forEach(downloadNodes -> );
-    Download download=new Download();
+    Download download = new Download();
     return download;
-}
+  }
+
   public void createDownloadZipFiles(String zipFileName, List<File> downloadsFilesList) {
 //todo test zipfile name. if get a zipfile name, use zipfile. if don't get a zipfile name,give a default zipfilename
-    if(StringUtils.isBlank(zipFileName)){
-      zipFileName="downloadsFiles.zip";
+    if (StringUtils.isBlank(zipFileName)) {
+      zipFileName = "downloadsFiles.zip";
     }
     if (downloadsFilesList != null && !downloadsFilesList.isEmpty()) {
       try (
@@ -68,10 +70,10 @@ public Download createDownloads(List<DownloadNodes> downloadNodesList){
   public void deleteDownloadsZip(String downloadNodeId) {
 
   }
- /** private validationNodes(List<String> downloadsNodesList){
-if(CollectionUtils.isEmpty(downloadsNodesList)){
-  throw new InvalidArgumentException(""+"");
-}*/
+  /** private validationNodes(List<String> downloadsNodesList){
+   if(CollectionUtils.isEmpty(downloadsNodesList)){
+   throw new InvalidArgumentException(""+"");
+   }*/
 
-  }
+}
 

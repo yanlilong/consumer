@@ -6,7 +6,6 @@ spring:
   application:
     name: ConsumerApplication
 
-
 kafka.bootstrapServers: 172.17.0.1:9092
 kafka.topic: alfresco-nodes-event
 kafka.groupId: group1
